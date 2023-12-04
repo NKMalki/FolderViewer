@@ -47,12 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocumentFactory.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="Folder.cs" />
     <Compile Include="FolderViewerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FolderViewerForm.Designer.cs">
       <DependentUpon>FolderViewerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="IDocument.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FolderViewerForm.resx">
