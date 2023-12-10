@@ -23,19 +23,24 @@ namespace FolderViewer
             return _fileSize;
         }
 
-        public string GetFileName()
+        public string GetDocName()
         {
             return _fileName;
         }
         
         public List<IDocument> GetChildren()
         {
-            throw new Exception("file does not have children");
+            return null;
         }
 
         public void addDocument(IDocument document)
         {
-            throw new Exception("file cannot add a document");
+            return;
+        }
+
+        public bool Equals(IDocument other)
+        {
+            return this.GetDocName().Equals(other.GetDocName());
         }
     }
 }

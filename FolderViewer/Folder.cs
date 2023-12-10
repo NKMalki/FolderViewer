@@ -16,13 +16,13 @@ namespace FolderViewer
             _folderName = folderName;
             _documents = new List<IDocument>();
         }
-        
+
         public long CalculateSize()
         {
             return _documents.Sum(doc => doc.CalculateSize());
         }
 
-        public string GetFolderName()
+        public string GetDocName()
         {
             return _folderName;
         }
@@ -35,6 +35,11 @@ namespace FolderViewer
         public List<IDocument> GetChildren()
         {
             return _documents;
+        }
+
+        public bool Equals(IDocument other)
+        {
+            return this.GetDocName().Equals(other.GetDocName());
         }
     }
 }
