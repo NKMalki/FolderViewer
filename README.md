@@ -1,5 +1,7 @@
 # FolderViewer
 A SWE316: Software Design and Construction homework.
+## Initilization
+This project only works on vs for some reason.
 ## Project Requirements:
 File/Folder combination is a typical example of the composite design pattern. A file has a name, size, extension. A
 folder has similar attribute (without an extension) plus a list of files or other folders. You are required to write a
